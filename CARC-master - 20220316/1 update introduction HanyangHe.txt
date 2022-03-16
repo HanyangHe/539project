@@ -1,0 +1,46 @@
+The newest file is "main_add_KNN_Kvr_newStructure"!!!!!!!!
+
+This version update information details:  HHY@2022.3.16
+1. Fully change the code structure to made it more general, reasonable, and easy to read.
+2. Change the dataset grouping and evaluation strategy. Original code use fixed test 
+year - 2013 and the remain years divided into 3 group as training set. How, I use
+ each year as the test set and the remain as the train set and get the average result
+ as the output (like K-fold method).
+3. The original code do not have the classifier step to give a clear label for the output.
+Now, I build a Kvr classifier (a kind of KNN classifier based on the distance matrix obtained
+by the CARC method used in the paper) to finish the classification task.
+4. For original LBP feature based classification task, the author also use fuzzy relation systhesis
+rule to get the distance matrix between test set and train (referance) set, which is not reasonable.
+So, I write a Eular distance function to get the distance matrix between the two. It seems that the
+results have some improved.
+5. Add the confusion matrix and classification precision to evaluate performance of each classifer.
+6. Add a new KNN classifer in MATLAB directly used the feature after PCA without processing by CARC
+ as a comparation.
+7. Have tried the LDA feature reduction method, the result is that it performance worse than PCA and 
+more time consuming. Maybe something wrong.
+8. Have designed GA optimal model to find some hyper-parameters such as the pcaDim and nPart. It is 
+time consuming and the result is not stable but around the deflut value. It seems the author has chosen
+a group of suitable parameters for his code. Thus, this work is not very necessary. Also, this two 
+parameters are not valuable enough to design. Maybe lambda1 and lambda2 in the CARC model are better design choices.
+
+The newest file is "main_add_KNN_Kvr_newStructure"!!!!!!!!
+
+
+Next version maybe:
+1. Add new classifers as comparison in the code.
+2. Check whether the LDA is not used in the right way so it makes the performance even become worse.
+3. Optimal design model may be updated.
+
+
+
+*********************************************************************************
+History version update information details:  HHY@2022.3.12
+1. Add a file to shrink the 2000 person data set to a 10 person data set.
+2. Add many notes behind the code to help read.
+3. Change some fixed number in the code to unified variables, and also define 
+some global variable to avoid inconsistency of variable values in functions. 
+This helps a lot for the CARC function, which improve the evaluation result.
+4. Re-write the data normalization part before PCA to make it reasonable and 
+easy to understand. By comparing, data normalization do help improve the evaluation result.
+5. Re-define the people evaluation range to a pair of boundary variable, which 
+make users easy to understand and set the boundary range flexibility.
