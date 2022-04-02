@@ -1,12 +1,11 @@
-The newest file is "main_AllComClassifier_newStructure"!!!!!!!!
+The newest file is "main_ANN_Classifier_newStructure"!!!!!!!!
 
-This version update information details:  HHY@2022.3.20
-1.Add all common classifier method (KNN, NB, Decision tree) into the main code;
-2.Try add ANN classifier but failed.
+This version update information details:  HHY@2022.4.2
+1.Add ANN classifier into the file "main_ANN_Classifier_newStructure". However, the performance is very bad.
 
 
 Next version maybe:
-1. Add ANN classifers as comparison in the code.
+1. Improve the performance of ANN by adjust it is parameters.
 2. Check whether the LDA is not used in the right way so it makes the performance even become worse.
 3. Optimal design model may be updated.
 
@@ -14,6 +13,10 @@ Next version maybe:
 
 *********************************************************************************
 History version update information details:  
+
+V3 HHY@2022.3.20
+1.Add all common classifier method (KNN, NB, Decision tree) into the main code;
+2.Try add ANN classifier but failed.
 
 V2 HHY@2022.3.16
 1. Fully change the code structure to made it more general, reasonable, and easy to read.
