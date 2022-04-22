@@ -1,7 +1,8 @@
-The newest file is "main_SVM_Classifier_newStructure"!!!!!!!!
+The newest file is "main_Union_Classifier_newStructure"!!!!!!!!
 
-This version update information details:  HHY @ 2022.4.21
-1.The SVM classifier was added into the code as comparation method. SVM only performance amazing at linear kernel function. Other cases are very bad.
+This version update information details:  HHY @ 2022.4.22
+1. Add an ensemble method, which union the CARC+KNN+SVM+DT+NBS. It performance good, but not better than the CARC single. 
+I have try many combinations of it, usually it will not better than the best performance leader method in the union.
 
 
 Next version maybe:
@@ -12,6 +13,10 @@ Next version maybe:
 
 *********************************************************************************
 History version update information details:  
+
+V6 HHY @ 2022.4.21
+1.The SVM classifier was added into the code as comparation method. SVM only performance amazing at linear kernel function. 
+Other cases are very bad.
 
 V5 HHY & Keegan @ 2022.4.15
 1.The DNN function well now and its results has been add in report. The key is to let the net to choose activation function by itself.
