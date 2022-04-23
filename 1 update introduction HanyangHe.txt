@@ -3,7 +3,7 @@ The newest file is "main_Union_Classifier_newStructure"!!!!!!!!
 This version update information details:  HHY @ 2022.4.22
 1. Add an ensemble method, which union the CARC+KNN+SVM+DT+NBS. It performance good, but not better than the CARC single. 
 I have try many combinations of it, usually it will not better than the best performance leader method in the union.
-
+2.Add a union version combinated by desicion tree as shown in the class code.
 
 Next version maybe:
 1. Check whether the LDA is not used in the right way so it makes the performance even become worse.
