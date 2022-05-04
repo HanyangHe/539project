@@ -1,18 +1,22 @@
-The newest file is "main_Union_Classifier_newStructure"!!!!!!!!
+The update file is "LDA_KNN_Classifier_newStructure"!!!!!!!!
 
-This version update information details:  HHY @ 2022.4.22
-1. Add an ensemble method, which union the CARC+KNN+SVM+DT+NBS. It performance good, but not better than the CARC single. 
-I have try many combinations of it, usually it will not better than the best performance leader method in the union.
-2.Add a union version combinated by desicion tree as shown in the class code.
+This version update information details:  Keegan + HHY @ 2022.4.27
+1. Add LDA feature reduction method in the KNN and CARC+KNN classifier case to compare with the PCA method.
 
 Next version maybe:
-1. Check whether the LDA is not used in the right way so it makes the performance even become worse.
-2. Optimal design model may be updated.(may not have time now)
+1. Write a quick paper based on this project to summarize the stage research experience and enrich the CV.
 
 
 
 *********************************************************************************
 History version update information details:  
+
+
+
+V7 HHY @ 2022.4.22
+1. Add an ensemble method, which union the CARC+KNN+SVM+DT+NBS. It performance good, but not better than the CARC single. 
+I have try many combinations of it, usually it will not better than the best performance leader method in the union.
+2.Add a union version combinated by desicion tree as shown in the class code.
 
 V6 HHY @ 2022.4.21
 1.The SVM classifier was added into the code as comparation method. SVM only performance amazing at linear kernel function. 
